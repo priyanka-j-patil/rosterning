@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Rostering-Interface</title>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+
+    <body>
+        <div class="si-main">
+            <div class="si-wrapper">
+                <div class="si-page-bg">
+                    <header>
+                        <div class="main__containerFluid">
+                            <div class="si-header">
+                                <div class="si-header__left">
+                                    <div class="si-header__leftContainer">
+                                        <div class="si-logoBox">
+                                            <span class="si-icon si-logo"></span>
+                                        </div>
+                                        <div class="si-projectName">
+                                            <span class="si-head">Rostering</span>
+                                            <span class="si-headSub">Interface</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="si-header__right">
+                                    <div class="si-header__rightContainer">
+                                        <div class="si-left">
+                                            <div class="si-btn si-todayBtn">
+                                                <span>Today</span>
+                                            </div>
+                                            <div class="si-weekSlider">
+                                                <span class="si-icon si-left"></span>
+                                                <span class="si-text">Week 52</span>
+                                                <span class="si-icon si-right"></span>
+                                            </div>
+                                            <div class="si-monthYearBox">
+                                                <span class="si-month">December</span>
+                                                <span class="si-year">2020</span>
+                                            </div>
+                                        </div>
+                                        <div class="si-right">
+                                            <div class="si-selectBox">
+                                                <select name="" id="players">
+                                                    <option value="">Players</option>
+                                                    <option value="">Option 2</option>
+                                                    <option value="">Option 3</option>
+                                                    <option value="">Option 4</option>
+                                                </select>
+                                            </div>
+                                            <div class="si-selectBox">
+                                                <select name="" id="sports">
+                                                    <option value="">All Sport</option>
+                                                    <option value="">Option 2</option>
+                                                    <option value="">Option 3</option>
+                                                    <option value="">Option 4</option>
+                                                </select>
+                                            </div>
+                                            <div class="si-btn si-sendMail">
+                                                <span>Send Email</span>
+                                                <span class="si-icon si-mail"></span>
+                                            </div>
+                                            <div class="si-reportsBox">
+                                                <span>Reports</span>
+                                                <span class="si-icon si-report"></span>
+                                            </div>
+                                            <div class="si-logoutBox">
+                                                <span class="si-icon si-logout"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+            <div class="si-popup active">
+                <div class="si-popup-modal si-animated si-playersPopup si-editPlayer si-newadd">
+                    <div class="si-popup-modal-bg"> <span class="si-popup-close"> </span>
+                        <div class="si-popup-body">
+                            <div class="si-player__top">
+                                <div class="si-head">
+                                    <span>Add Players</span>
+                                </div>
+                                <div class="si-searchBox">
+                                    <input type="text" class="playerSearchBox" placeholder="Search by Players / Events">
+                                </div>
+                            </div>
+                            <div class="si-player__center">
+                                <div class="si-tbls">
+                                    <div class="si-tbls__head">
+                                        <div class="si-tbls__row">
+                                            <div class="si-tbls__cell si-playerName si-change"> <span>Player Name</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-role"> <span>Player Role</span> </div>
+                                            <div class="si-tbls__cell si-sport"> <span>Sport</span> </div>
+                                        </div>
+                                    </div>
+                                    <div class="si-tbls__body">
+                                        <div class="scroll-pane">
+
+                                            <div class="si-tbls__row">
+                                                <div class="si-tbls__cell si-playerName si-change">
+                                                    <div class="si-playerName__container">
+                                                        <input type="text" class="si-editxt">
+                                                    </div>
+                                                </div>
+                                                <div class="si-tbls__cell si-role">
+                                                    <div class="si-role__container">
+                                                        <span>advanced scoring</span>
+                                                        <div class="si-selectBox">
+                                                            <div class="SumoSelect" tabindex="0" role="button"
+                                                                aria-expanded="false"><select name="" id="sport_15"
+                                                                    multiple="" class="si-sport_selectBox SumoUnder"
+                                                                    tabindex="-1">
+                                                                    <option selected="" value="1">advanced scoring
+                                                                    </option>
+
+                                                                </select>
+
+                                                                <div class="optWrapper multiple">
+                                                                    <ul class="options">
+                                                                        <li class="opt selected">
+                                                                            <span><i></i></span><label>advanced
+                                                                                scoring</label>
+                                                                        </li>
+
+                                                                    </ul>
+                                                                    <div class="MultiControls">
+                                                                        <p tabindex="0" class="btnOk">OK</p>
+                                                                        <p tabindex="0" class="btnCancel">Cancel</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="si-tbls__cell si-sport">
+                                                    <div class="si-sport__container">
+                                                        <span>Cricket,Football</span>
+                                                        <div class="si-selectBox">
+                                                            <div class="SumoSelect" tabindex="0" role="button"
+                                                                aria-expanded="false"><select name="" id="sport_15"
+                                                                    multiple="" class="si-sport_selectBox SumoUnder"
+                                                                    tabindex="-1">
+                                                                    <option selected="" value="1">Cricket</option>
+
+                                                                </select>
+
+                                                                <div class="optWrapper multiple">
+                                                                    <ul class="options">
+                                                                        <li class="opt selected">
+                                                                            <span><i></i></span><label>Cricket</label>
+                                                                        </li>
+                                                                        <li class="opt selected">
+                                                                            <span><i></i></span><label>Football</label>
+                                                                        </li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Kabaddi</label>
+                                                                        </li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Formula
+                                                                                1</label></li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Moto
+                                                                                GP</label></li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Badminton</label>
+                                                                        </li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Tennis</label>
+                                                                        </li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Hockey</label>
+                                                                        </li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>RFYS-Football</label>
+                                                                        </li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Shooting</label>
+                                                                        </li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Table
+                                                                                Tennis</label></li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>BasketBall</label>
+                                                                        </li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Six
+                                                                                Day</label></li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Kusti</label>
+                                                                        </li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Baseball</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="MultiControls">
+                                                                        <p tabindex="0" class="btnOk">OK</p>
+                                                                        <p tabindex="0" class="btnCancel">Cancel</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="si-negative"><span class="si-icon si-delete"></span></div>
+                                            </div>
+                                            <div class="si-tbls__row">
+                                                <div class="si-tbls__cell si-playerName si-change">
+                                                    <div class="si-playerName__container">
+                                                        <input type="text" class="si-editxt">
+                                                    </div>
+                                                </div>
+                                                <div class="si-tbls__cell si-role">
+                                                    <div class="si-role__container">
+                                                        <span>advanced scoring</span>
+
+                                                        <div class="si-selectBox">
+                                                            <div class="SumoSelect" tabindex="0" role="button"
+                                                                aria-expanded="false"><select name="" id="sport_15"
+                                                                    multiple="" class="si-sport_selectBox SumoUnder"
+                                                                    tabindex="-1">
+                                                                    <option selected="" value="1">advanced scoring
+                                                                    </option>
+
+                                                                </select>
+
+                                                                <div class="optWrapper multiple">
+                                                                    <ul class="options">
+                                                                        <li class="opt selected">
+                                                                            <span><i></i></span><label>advanced
+                                                                                scoring</label>
+                                                                        </li>
+
+                                                                    </ul>
+                                                                    <div class="MultiControls">
+                                                                        <p tabindex="0" class="btnOk">OK</p>
+                                                                        <p tabindex="0" class="btnCancel">Cancel</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="si-tbls__cell si-sport">
+                                                    <div class="si-sport__container">
+                                                        <span>Cricket,Football</span>
+                                                        <div class="si-selectBox">
+                                                            <div class="SumoSelect" tabindex="0" role="button"
+                                                                aria-expanded="false"><select name="" id="sport_15"
+                                                                    multiple="" class="si-sport_selectBox SumoUnder"
+                                                                    tabindex="-1">
+                                                                    <option selected="" value="1">Cricket</option>
+
+                                                                </select>
+
+                                                                <div class="optWrapper multiple">
+                                                                    <ul class="options">
+                                                                        <li class="opt selected">
+                                                                            <span><i></i></span><label>Cricket</label>
+                                                                        </li>
+                                                                        <li class="opt selected">
+                                                                            <span><i></i></span><label>Football</label>
+                                                                        </li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Kabaddi</label>
+                                                                        </li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Formula
+                                                                                1</label></li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Moto
+                                                                                GP</label></li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Badminton</label>
+                                                                        </li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Tennis</label>
+                                                                        </li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Hockey</label>
+                                                                        </li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>RFYS-Football</label>
+                                                                        </li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Shooting</label>
+                                                                        </li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Table
+                                                                                Tennis</label></li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>BasketBall</label>
+                                                                        </li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Six
+                                                                                Day</label></li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Kusti</label>
+                                                                        </li>
+                                                                        <li class="opt">
+                                                                            <span><i></i></span><label>Baseball</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="MultiControls">
+                                                                        <p tabindex="0" class="btnOk">OK</p>
+                                                                        <p tabindex="0" class="btnCancel">Cancel</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="si-player__bottom" style="">
+                                <div class="si-btn si-btnrow" data-type="add"> <span>Add Row</span> </div>
+                                <div class="si-btn si-btnOne" data-type="add"> <span>Save</span> </div>
+                                <div class="si-btn si-btnTwo"> <span>Cancel</span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/libraries/jquery.min.js"></script>
+        <script src="../js/libraries/jquery.mousewheel.min.js"></script>
+        <script src="../js/libraries/jquery.jscrollpane.min.js"></script>
+        <script src="../js/libraries/jquery.sumoselect.min.js"></script>
+        <script>
+            $(function () {
+                $('select').SumoSelect();
+                $('.scroll-pane').jScrollPane();
+            });
+        </script>
+
+    </body>
+
+</html>

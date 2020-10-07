@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'NimbusSanLRegIta';
+    src: url('fonts/NimbusSanLRegIta.eot');
+    src: url('fonts/NimbusSanLRegIta.eot') format('embedded-opentype'),
+         url('fonts/NimbusSanLRegIta.woff2') format('woff2'),
+         url('fonts/NimbusSanLRegIta.woff') format('woff'),
+         url('fonts/NimbusSanLRegIta.ttf') format('truetype'),
+         url('fonts/NimbusSanLRegIta.svg#NimbusSanLRegIta') format('svg');
+}

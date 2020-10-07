@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rostering-Interface</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div class="si-main">
+        <div class="si-wrapper">
+            <div class="si-page-bg">
+                <header>
+                    <div class="main__containerFluid">
+                        <div class="si-header">
+                            <div class="si-header__left">
+                                <div class="si-header__leftContainer">
+                                    <div class="si-logoBox">
+                                        <span class="si-icon si-logo"></span>
+                                    </div>
+                                    <div class="si-projectName">
+                                        <span class="si-head">Rostering</span>
+                                        <span class="si-headSub">Interface</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="si-header__right">
+                                <div class="si-header__rightContainer">
+                                    <div class="si-left">
+                                        <div class="si-btn si-todayBtn">
+                                            <span>Today</span>
+                                        </div>
+                                        <div class="si-weekSlider">
+                                            <span class="si-icon si-left"></span>
+                                            <span class="si-text">Week 52</span>
+                                            <span class="si-icon si-right"></span>
+                                        </div>
+                                        <div class="si-monthYearBox">
+                                            <span class="si-month">December</span>
+                                            <span class="si-year">2020</span>
+                                        </div>
+                                    </div>
+                                    <div class="si-right">
+                                        <div class="si-selectBox">
+                                            <select name="" id="players">
+                                                <option value="">Players</option>
+                                                <option value="">Option 2</option>
+                                                <option value="">Option 3</option>
+                                                <option value="">Option 4</option>
+                                            </select>
+                                        </div>
+                                        <div class="si-selectBox">
+                                            <select name="" id="sports">
+                                                <option value="">All Sport</option>
+                                                <option value="">Option 2</option>
+                                                <option value="">Option 3</option>
+                                                <option value="">Option 4</option>
+                                            </select>
+                                        </div>
+                                        <div class="si-btn si-sendMail">
+                                            <span>Send Email</span>
+                                            <span class="si-icon si-mail"></span>
+                                        </div>
+                                        <div class="si-reportsBox">
+                                            <span>Reports</span>
+                                            <span class="si-icon si-report"></span>
+                                        </div>
+                                        <div class="si-logoutBox">
+                                            <span class="si-icon si-logout"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div class="si-popup active">
+            <div class="si-popup-modal si-animated si-playersPopup si-playerList">
+                <div class="si-popup-modal-bg">
+                    <span class="si-popup-close">
+                    </span>
+                    <div class="si-popup-body">
+                        <div class="si-player__top">
+                            <div class="si-head">
+                                <span>Player List</span>
+                            </div>
+                            <div class="si-searchBox">
+                                <input type="text" placeholder="Search by Players / Events">
+                            </div>
+                        </div>
+                        <div class="si-player__center">
+                            <div class="si-tbls">
+                                <div class="si-tbls__head">
+                                    <div class="si-tbls__row">
+                                        <div class="si-tbls__cell si-playerName">
+                                            <span>Player Name</span>
+                                        </div>
+                                        <div class="si-tbls__cell si-role">
+                                            <span>Player Role</span>
+                                        </div>
+                                        <div class="si-tbls__cell si-sport">
+                                            <span>Sport</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="si-tbls__body">
+                                    <div class="scroll-pane">
+                                        <div class="si-tbls__row">
+                                            <div class="si-tbls__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Player Role</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Sport</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbls__row">
+                                            <div class="si-tbls__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Player Role</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Sport</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbls__row">
+                                            <div class="si-tbls__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Player Role</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Sport</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbls__row">
+                                            <div class="si-tbls__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Player Role</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Sport</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbls__row">
+                                            <div class="si-tbls__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Player Role</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Sport</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbls__row">
+                                            <div class="si-tbls__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Player Role</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Sport</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbls__row">
+                                            <div class="si-tbls__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Player Role</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Sport</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbls__row">
+                                            <div class="si-tbls__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Player Role</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Sport</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbls__row">
+                                            <div class="si-tbls__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Player Role</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Sport</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbls__row">
+                                            <div class="si-tbls__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Player Role</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Sport</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbls__row">
+                                            <div class="si-tbls__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Player Role</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbls__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Sport</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="si-player__bottom">
+                            <div class="si-btn si-btnOne">
+                                <span>Delete</span>
+                            </div>
+                            <div class="si-btn si-btnTwo">
+                                <span>Cancel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/libraries/jquery.min.js"></script>
+    <script src="../js/libraries/jquery.mousewheel.min.js"></script>
+    <script src="../js/libraries/jquery.jscrollpane.min.js"></script>
+    <script src="../js/libraries/jquery.sumoselect.min.js"></script>
+    <script>
+        $(function () {
+            $('select').SumoSelect();
+            $('.scroll-pane').jScrollPane();
+        });
+    </script>
+
+</body>
+
+</html>

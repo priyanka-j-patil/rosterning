@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'rostering';
+  src:  url('fonts/rostering.eot?cbk6ti');
+  src:  url('fonts/rostering.eot?cbk6ti#iefix') format('embedded-opentype'),
+    url('fonts/rostering.ttf?cbk6ti') format('truetype'),
+    url('fonts/rostering.woff?cbk6ti') format('woff'),
+    url('fonts/rostering.svg?cbk6ti#rostering') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="rostering--"], [class*=" rostering--"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'rostering' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rostering--negative:before {
+  content: "\e900";
+}
+.rostering--positive:before {
+  content: "\e910";
+}
+.rostering--reports:before {
+  content: "\e903";
+}
+.rostering--more:before {
+  content: "\e904";
+}
+.rostering--logout:before {
+  content: "\e905";
+}
+.rostering--forward:before {
+  content: "\e906";
+}
+.rostering--email:before {
+  content: "\e907";
+}
+.rostering--edit:before {
+  content: "\e909";
+}
+.rostering--dropdown:before {
+  content: "\e90a";
+}
+.rostering--delete:before {
+  content: "\e90b";
+}
+.rostering--close:before {
+  content: "\e90c";
+}
+.rostering--backward:before {
+  content: "\e90d";
+}
+.rostering--addColumn:before {
+  content: "\e90e";
+}
+.rostering--key:before {
+  content: "\e901";
+}
+.rostering--user:before {
+  content: "\e902";
+}
+.rostering--logo:before {
+  content: "\e908";
+}
+.rostering--right:before {
+  content: "\e90f";
+}

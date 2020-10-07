@@ -1,0 +1,238 @@
+.si-calender {
+    width: calc(100vw - 20px);
+    height: calc(100vh - 88px);
+    background-color: $white;
+    @include box-shadow(0, 0px, 18px, 0, rgba($black, .14));
+    position: relative;
+    float: right;
+    @include border-radius(40px 40px 0 0px);
+
+    @media screen and (max-width:$media-tablet-large-max) {
+        float: none;
+        margin: 20px auto 0;
+        width: 100%;
+        @include border-radius(20px 20px 0 0px);
+        height: calc(100vh - 210px);
+    }
+
+    @media screen and (max-width:$media-tablet-large-max) and (orientation: portrait) {
+        height: calc(100vh - 210px);
+    }
+
+    @media screen and (max-width:854px) and (orientation: landscape) {
+        height: auto;
+    }
+
+    @media screen and (max-width:$media-mobile-max) and (orientation: landscape) {
+        height: auto;
+    }
+
+    .si-calheader {
+        padding-left: 39px;
+        padding-right: 27px;
+        padding-top: 20px;
+
+        @media screen and (max-width:$media-tablet-large-max) {
+            padding: 20px 10px 0px;
+        }
+
+        .si-top {
+            @extend %flexbox;
+            margin-bottom: 25px;
+
+            .si-left {
+                @extend %flexbox;
+                flex: 1;
+
+                @media screen and (max-width:$media-tablet-large-max) {
+                    flex-flow: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                }
+
+                .si-assign,
+                .si-unassign {
+                    @extend %flexbox;
+                    font-family: $bold_font-family;
+                    font-weight: $bold_font-weight;
+                    font-size: 14px;
+                    align-items: center;
+
+                    @media screen and (max-width:$media-tablet-large-max) {
+                        font-size: 12px;
+                    }
+
+                    & span {
+                        padding-left: 4px;
+                    }
+                }
+
+                .si-assign {
+                    color: $client-primary-color;
+
+                }
+
+                .si-unassign {
+                    color: $client-secondary-color;
+                    padding-left: 27px;
+
+                    @media screen and (max-width:$media-tablet-large-max) {
+                        padding-left: 0;
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            .si-right {
+                width: 444px;
+
+                @media screen and (max-width: 991px) {
+                    flex: 0 0 45%;
+                    width: 45%;
+                }
+
+                .si-searchBox {
+                    max-width: 444px;
+
+                    input {
+                        @include border-radius(30px);
+                        border: 1px solid $border-color;
+                        padding: 10px;
+
+                        @media screen and (max-width:$media-tablet-large-max) {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .si-weekcalender {
+        @media screen and (max-width:$media-tablet-large-max) {
+            padding: 0 10px;
+        }
+
+        .si-tblheader {
+            @extend %flexbox;
+
+            @media screen and (max-width:$media-tablet-large-max) {
+                background-color: $white;
+                @include border-radius(10px);
+                @include box-shadow(0, 0, 18px, 0, rgba($black, .14));
+                height: 72px;
+                padding: 0 10px;
+            }
+
+            .si-column {
+                @extend %flexbox;
+                flex-flow: column;
+                align-items: center;
+                justify-content: center;
+                color: #5c5c5c;
+
+                &.active {
+                    color: $client-complementary-color;
+
+                    .si-day {
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 10px;
+                            height: 10px;
+                            @include border-radius(50%);
+                            top: 0px;
+                            left: -14px;
+                            background-color: $client-complementary-color
+                        }
+                    }
+                }
+
+                .si-day {
+                    font-family: $regular_font-family;
+                    font-weight: $regular_font-weight;
+                    font-size: 14px;
+                    line-height: 1;
+                    margin-bottom: 10px;
+
+                    &.si-shortName {
+                        display: none;
+
+                        @media screen and (max-width: $media-mobile-max) {
+                            display: block;
+                        }
+                    }
+
+                    &.si-fullName {
+                        @media screen and (max-width: $media-mobile-max) {
+                            display: none;
+                        }
+                    }
+
+                    @media screen and (max-width:$media-tablet-large-max) {
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .si-date {
+                    font-family: $regular_font-family;
+                    font-weight: $regular_font-weight;
+                    font-size: 35px;
+                    line-height: 1;
+
+                    @media screen and (max-width:$media-tablet-large-max) {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+
+        .si-column {
+            width: 14.28%;
+            @extend %flexbox;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &Top {
+        @include box-shadow(0, 6px, 7px, 0, rgba($black, .14));
+        @include border-radius(40px 40px 0 0px);
+        overflow: hidden;
+        padding-bottom: 15px;
+    }
+
+    &Bottom {
+        height: calc(100vh - 238px);
+
+        @media screen and (max-width:$media-tablet-large-max) {
+            height: calc(100vh - 387px);
+        }
+
+        @media screen and (max-width:854px) and (orientation: landscape) {
+            height: 360px;
+        }
+
+        @media screen and (max-width:$media-tablet-large-max) and (orientation: portrait) {
+            height: calc(100vh - 387px);
+        }
+
+        .scroll-pane {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+
+        .si-tableBox {
+            @extend %flexbox;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    }
+
+
+
+
+}

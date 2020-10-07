@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rostering-Interface</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div class="si-main">
+        <div class="si-wrapper">
+            <div class="si-page-bg">
+                <header>
+                    <div class="main__containerFluid">
+                        <div class="si-header">
+                            <div class="si-header__left">
+                                <div class="si-header__leftContainer">
+                                    <div class="si-logoBox">
+                                        <span class="si-icon si-logo"></span>
+                                    </div>
+                                    <div class="si-projectName">
+                                        <span class="si-head">Rostering</span>
+                                        <span class="si-headSub">Interface</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="si-header__right">
+                                <div class="si-header__rightContainer">
+                                    <div class="si-left">
+                                        <div class="si-btn si-todayBtn">
+                                            <span>Today</span>
+                                        </div>
+                                        <div class="si-weekSlider">
+                                            <span class="si-icon si-left"></span>
+                                            <span class="si-text">Week 52</span>
+                                            <span class="si-icon si-right"></span>
+                                        </div>
+                                        <div class="si-monthYearBox">
+                                            <span class="si-month">December</span>
+                                            <span class="si-year">2020</span>
+                                        </div>
+                                    </div>
+                                    <div class="si-right">
+                                        <div class="si-selectBox">
+                                            <select name="" id="players">
+                                                <option value="">Players</option>
+                                                <option value="">Option 2</option>
+                                                <option value="">Option 3</option>
+                                                <option value="">Option 4</option>
+                                            </select>
+                                        </div>
+                                        <div class="si-selectBox">
+                                            <select name="" id="sports">
+                                                <option value="">All Sport</option>
+                                                <option value="">Option 2</option>
+                                                <option value="">Option 3</option>
+                                                <option value="">Option 4</option>
+                                            </select>
+                                        </div>
+                                        <div class="si-btn si-sendMail">
+                                            <span>Send Email</span>
+                                            <span class="si-icon si-mail"></span>
+                                        </div>
+                                        <div class="si-reportsBox">
+                                            <span>Reports</span>
+                                            <span class="si-icon si-report"></span>
+                                        </div>
+                                        <div class="si-logoutBox">
+                                            <span class="si-icon si-logout"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <section>
+                    <div class="main__containerFluid">
+                        <div class="si-calender">
+                            <div class="si-calenderTop">
+                                <div class="si-calheader">
+                                    <div class="si-top">
+                                        <div class="si-left">
+                                            <span class="si-assign">Total Matches Assigned - <span>6</span></span>
+                                            <span class="si-unassign">Total Matches Unassigned - <span>4</span></span>
+                                        </div>
+                                        <div class="si-right">
+                                            <div class="si-searchBox">
+                                                <input type="text" placeholder="Search by Players / Events">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="si-weekcalender">
+                                    <div class="si-tblheader">
+                                        <div class="si-column">
+                                            <span class="si-day">Sunday</span>
+                                            <span class="si-date">1</span>
+                                        </div>
+                                        <div class="si-column">
+                                            <span class="si-day">Monday</span>
+                                            <span class="si-date">2</span>
+                                        </div>
+                                        <div class="si-column">
+                                            <span class="si-day">Tuesday</span>
+                                            <span class="si-date">3</span>
+                                        </div>
+                                        <div class="si-column">
+                                            <span class="si-day">Wednesday</span>
+                                            <span class="si-date">4</span>
+                                        </div>
+                                        <div class="si-column">
+                                            <span class="si-day">Thursday</span>
+                                            <span class="si-date">5</span>
+                                        </div>
+                                        <div class="si-column">
+                                            <span class="si-day">Friday</span>
+                                            <span class="si-date">6</span>
+                                        </div>
+                                        <div class="si-column">
+                                            <span class="si-day">Saturday</span>
+                                            <span class="si-date">7</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="si-calenderBottom">
+                                <div class="scroll-pane">
+                                    <div class="si-tableBox">
+                                        <div class="si-card__list">
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="si-card__box si-unassigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="si-card__box">
+
+                                            </div>
+                                            <div class="si-card__box">
+
+                                            </div>
+                                            <div class="si-card__box">
+
+                                            </div>
+                                            <div class="si-card__box">
+
+                                            </div>
+                                        </div>
+
+                                        <div class="si-card__list">
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-unassigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="si-card__list">
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-unassigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box">
+
+                                            </div>
+                                            <div class="si-card__box">
+
+                                            </div>
+                                            <div class="si-card__box">
+
+                                            </div>
+                                            <div class="si-card__box">
+
+                                            </div>
+                                            <div class="si-card__box">
+
+                                            </div>
+                                            <div class="si-card__box">
+
+                                            </div>
+                                        </div>
+
+                                        <div class="si-card__list">
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-unassigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="si-card__list">
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-unassigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="si-card__list">
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-unassigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="si-card__list">
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-unassigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="si-card__box si-assigned">
+                                                <div class="si-card__container">
+                                                    <div class="si-teams">
+                                                        <span>SRH</span>
+                                                        <span>vs</span>
+                                                        <span>KKR</span>
+                                                    </div>
+                                                    <div class="si-time">
+                                                        <span>8 -9.30 AM</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="si-popup">
+            <div class="si-popup-modal si-animated si-playersPopup si-playerList">
+                <div class="si-popup-modal-bg">
+                    <span class="si-popup-close">
+                    </span>
+                    <div class="si-popup-body">
+                        <div class="si-player__top">
+                            <div class="si-head">
+                                <span>Delete Players</span>
+                            </div>
+                            <div class="si-searchBox">
+                                <input type="text" placeholder="Search by Players / Events">
+                            </div>
+                        </div>
+                        <div class="si-player__center">
+                            <div class="scroll-pane">
+                                <div class="si-tbl">
+                                    <div class="si-tbl__body">
+                                        <div class="si-tbl__row">
+                                            <div class="si-tbl__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbl__row">
+                                            <div class="si-tbl__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbl__row">
+                                            <div class="si-tbl__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbl__row">
+                                            <div class="si-tbl__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbl__row">
+                                            <div class="si-tbl__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbl__row">
+                                            <div class="si-tbl__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbl__row">
+                                            <div class="si-tbl__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbl__row">
+                                            <div class="si-tbl__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbl__row">
+                                            <div class="si-tbl__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbl__row">
+                                            <div class="si-tbl__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-tbl__row">
+                                            <div class="si-tbl__cell si-playerName">
+                                                <div class="si-playerName__container">
+                                                    <div class="si-checkBox">
+                                                        <input type="checkbox" id="tnc-tick2">
+                                                        <label for="tnc-tick2"></label>
+                                                    </div>
+                                                    <span>Colin de Grandhomme</span>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-role">
+                                                <div class="si-role__container">
+                                                    <span>Player Role</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="si-tbl__cell si-sport">
+                                                <div class="si-sport__container">
+                                                    <span>Sport</span>
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="">
+                                                            <option value="">Option 1</option>
+                                                            <option value="">Option 2</option>
+                                                            <option value="">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="si-player__bottom">
+                            <div class="si-btn si-btnOne">
+                                <span>Delete</span>
+                            </div>
+                            <div class="si-btn si-btnTwo">
+                                <span>Cancel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="si-popup active">
+            <div class="si-popup-modal si-animated si-tooltip si-assigned">
+                <div class="si-popup-modal-bg">
+                    <div class="si-popup-body">
+                        <div class="si-tooltipBox">
+                            <div class="si-boxHeader">
+                                <div class="si-boxHeader__left">
+                                    <span class="si-icon si-back"></span>
+                                </div>
+                                <div class="si-boxHeader__right">
+                                    <ul>
+                                        <li><span class="si-icon si-edit"></span></li>
+                                        <li><span class="si-icon si-delete"></span></li>
+                                        <li><span class="si-icon si-mail"></span></li>
+                                        <li><span class="si-icon si-menu"></span></li>
+                                        <li><span class="si-icon si-cancel"></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="si-matchName">
+                                <span class="si-team">SRH</span>
+                                <span class="si-vs">vs</span>
+                                <span class="si-team">KKR</span>
+                            </div>
+                            <div class="si-dateBox">
+                                <span class="si-day">Mon,</span>
+                                <span class="si-date">8th</span>
+                                <span class="si-month">July,</span>
+                                <span class="si-time">8 AM - 9 AM</span>
+                            </div>
+                            <div class="si-scrollBox">
+                                <div class="scroll-pane">
+                                    <div class="si-scrollBox__container">
+                                        <div class="si-assignBox">
+                                            <div class="si-assignBox__container si-assignBox__left">
+                                                <span>Assigned to :</span>
+                                            </div>
+                                            <div class="si-assignBox__container si-assignBox__select">
+                                                <div class="si-selectBox">
+                                                    <select name="" id="playerRole">
+                                                        <option value="">Player Role
+                                                        </option>
+                                                        <option value="">Option 2</option>
+                                                        <option value="">Option 3</option>
+                                                        <option value="">Option 4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="si-assignBox__container si-assignBox__select">
+                                                <div class="si-selectBox">
+                                                    <select name="" id="addPlayer">
+                                                        <option value="">Add Player</option>
+                                                        <option value="">Option 2</option>
+                                                        <option value="">Option 3</option>
+                                                        <option value="">Option 4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="si-assignBox__container si-iconBox">
+                                                <span class="si-icon si-delete"></span>
+                                            </div>
+                                        </div>
+                                        <div class="si-assignBox">
+                                            <div class="si-assignBox__container si-assignBox__left">
+                                                <span>Assigned to :</span>
+                                            </div>
+                                            <div class="si-assignBox__container si-assignBox__select">
+                                                <div class="si-selectBox">
+                                                    <select name="" id="playerRole">
+                                                        <option value="">Player Role
+                                                        </option>
+                                                        <option value="">Option 2</option>
+                                                        <option value="">Option 3</option>
+                                                        <option value="">Option 4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="si-assignBox__container si-assignBox__select">
+                                                <div class="si-selectBox">
+                                                    <select name="" id="addPlayer">
+                                                        <option value="">Add Player</option>
+                                                        <option value="">Option 2</option>
+                                                        <option value="">Option 3</option>
+                                                        <option value="">Option 4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="si-assignBox__container si-iconBox">
+                                                <span class="si-icon si-delete"></span>
+                                            </div>
+                                        </div>
+                                        <div class="si-assignBox">
+                                            <div class="si-assignBox__container si-assignBox__left">
+                                                <span>Assigned to :</span>
+                                            </div>
+                                            <div class="si-assignBox__container si-assignBox__select">
+                                                <div class="si-selectBox">
+                                                    <select name="" id="playerRole">
+                                                        <option value="">Player Role
+                                                        </option>
+                                                        <option value="">Option 2</option>
+                                                        <option value="">Option 3</option>
+                                                        <option value="">Option 4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="si-assignBox__container si-assignBox__select">
+                                                <div class="si-selectBox">
+                                                    <select name="" id="addPlayer">
+                                                        <option value="">Add Player</option>
+                                                        <option value="">Option 2</option>
+                                                        <option value="">Option 3</option>
+                                                        <option value="">Option 4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="si-assignBox__container si-iconBox">
+                                                <span class="si-icon si-delete"></span>
+                                            </div>
+                                        </div>
+                                        <div class="si-btn si-addColumn">
+                                            <span class="si-icon si-add"></span>
+                                            <span>Add Column</span>
+                                        </div>
+                                        <div class="si-notification">
+                                            <span class="si-default">Notification: 15 min
+                                                before</span>
+                                            <div class="si-notification__box">
+                                                <span>Notification :</span>
+                                                <div class="si-num">
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="num">
+                                                            <option value="">15</option>
+                                                            <option value="">Option 2
+                                                            </option>
+                                                            <option value="">Option 3
+                                                            </option>
+                                                            <option value="">Option 4
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="si-num">
+                                                    <div class="si-selectBox">
+                                                        <select name="" id="timeType">
+                                                            <option value="">sec</option>
+                                                            <option value="">Min</option>
+                                                            <option value="">Hrs</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="si-btn si-btnSave">
+                                            <span>Save</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/libraries/jquery.min.js"></script>
+    <script src="../js/libraries/jquery.mousewheel.min.js"></script>
+    <script src="../js/libraries/jquery.jscrollpane.min.js"></script>
+    <script src="../js/libraries/jquery.sumoselect.min.js"></script>
+    <script>
+        $(function () {
+            $('select').SumoSelect();
+            $('.scroll-pane').jScrollPane();
+        });
+    </script>
+
+</body>
+
+</html>

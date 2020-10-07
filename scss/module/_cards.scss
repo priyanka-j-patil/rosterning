@@ -1,0 +1,90 @@
+.si-card {
+    &__list {
+        flex: 0 0 14.28%;
+        width: 14.28%;
+
+        @media screen and (max-width: $media-mobile-max) {
+            display: none;
+        }
+
+        &.active {
+            @media screen and (max-width: $media-mobile-max) {
+                display: block;
+                flex: 0 0 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    &__box {
+        min-height: 59px;
+        border: .5px solid rgba($black, 0.14);
+        padding: 5px 11px;
+
+        &.si-assigned {
+            .si-card__container {
+                background-color: rgba($client-primary-color, 0.3);
+
+                .si-tooltipBox {
+                    &::before {
+                        background-color: $client-primary-color;
+                    }
+
+                    .si-matchName {
+                        span {
+                            color: $client-primary-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.si-unassigned {
+            .si-card__container {
+                background-color: rgba($client-secondary-color, 0.3);
+
+                .si-tooltipBox {
+                    &::before {
+                        background-color: $client-secondary-color;
+                    }
+
+                    .si-matchName {
+                        span {
+                            color: $client-secondary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__container {
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 5px;
+        @extend %flexbox;
+        flex-flow: column;
+        height: 47px;
+        position: relative;
+
+        span {
+            font-size: 10px;
+            font-family: $bold_font-family;
+            font-weight: $bold_font-weight;
+            color: $font-color;
+            line-height: 1;
+        }
+
+
+
+
+
+
+
+
+    }
+}
+
+select {
+    cursor: pointer;
+}

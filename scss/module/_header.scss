@@ -1,0 +1,450 @@
+.si-header {
+    @extend %flexbox;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    padding-right: 15px;
+
+    @media screen and (max-width:$media-tablet-large-max) {
+        flex-flow: column;
+        height: auto;
+        padding: 0px;
+    }
+
+    &__left,
+    &__right {
+        &Container {
+            @extend %flexbox;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+
+    &__left {
+        /* flex: 0 0 23%;
+        width: 23%; */
+        padding-right: 15px;
+
+        @media screen and (min-width: $media-tablet-max) and (max-width: $media-desktop-small-max) {
+            flex: unset;
+            width: auto;
+        }
+
+        @media screen and (max-width:$media-tablet-large-max) {
+            flex: unset;
+            width: 100%;
+            padding: 0px;
+            height: 78px;
+        }
+
+        &Container {
+            @media screen and (max-width:$media-tablet-large-max) {
+                height: 100%;
+                background-color: #498879;
+            }
+
+            .si-logoBox {
+                position: relative;
+                margin-right: 30px;
+                margin-top: -30px;
+                width: 45px;
+                height: 45px;
+                z-index: 1;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 90px;
+                    height: 58px;
+                    left: 50%;
+                    top: 50%;
+                    z-index: -1;
+                    background-color: $client-complementary-color;
+                    @include transform(translate(-50%, -50%) rotate(45deg));
+                    @include border-radius(0 50px 50px 0px);
+
+                    @media screen and (max-width:$media-tablet-large-max) {
+                        background-color: $client-secondary-color;
+                    }
+                }
+
+                .si-icon {
+                    width: 45px;
+                    height: 45px;
+                    position: absolute;
+                    left: 10px;
+                    top: 10px;
+
+                    &::after {
+                        color: $white;
+                        font-size: 40px;
+                    }
+
+                    &.si-logo {
+                        &::after {
+                            content: map-get($icons, logo)
+                        }
+                    }
+                }
+            }
+
+            .si-projectName {
+                @extend %flexbox;
+                flex-flow: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                text-transform: uppercase;
+                color: $font-color;
+
+                @media screen and (max-width:$media-tablet-large-max) {
+                    color: $white;
+                }
+
+                .si-head {
+                    font-size: 25px;
+                    font-family: $bold_font-family;
+                    font-weight: $bold_font-weight;
+
+                    &Sub {
+                        font-size: 12px;
+                        font-family: $bold_font-family;
+                        font-weight: $bold_font-weight;
+                        letter-spacing: 12px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    &__right {
+        /* flex: 0 0 77%;
+        width: 77%; */
+
+        @media screen and (min-width: $media-tablet-max) and (max-width: $media-desktop-small-max) {
+            flex: unset;
+            width: auto;
+        }
+
+        @media screen and (max-width:$media-tablet-large-max) {
+            flex: unset;
+            width: 100%;
+            padding: 0 10px;
+
+        }
+
+        &Container {
+            @media screen and (max-width:$media-tablet-large-max) {
+                flex-flow: column-reverse;
+                align-items: flex-start;
+                justify-content: center;
+            }
+        }
+
+        .si-left,
+        .si-right {
+            @extend %flexbox;
+            align-items: center;
+            justify-content: flex-start;
+
+            @media screen and (max-width:$media-tablet-large-max) {
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+
+        .si-left {
+            @media screen and (max-width:$media-tablet-large-max) {
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+
+        .si-btn {
+            height: 33px;
+            margin-right: 15px;
+            font-family: $bold_font-family;
+            font-weight: $bold_font-weight;
+            font-size: 13px;
+            color: $font-color;
+            @include border-radius(50px);
+            border: 1px solid $border-color;
+            padding: 10px 8px;
+
+            @media screen and (min-width: $media-tablet-max) and (max-width: $media-desktop-small-max) {
+                margin-right: 10px;
+            }
+
+            span {
+                // display: block;
+            }
+
+            &.si-todayBtn {
+                min-width: 93px;
+                width: 93px;
+            }
+
+            &.si-sendMail {
+                @extend %flexbox;
+                align-items: center;
+                justify-content: center;
+                min-width: 146px;
+                width: 146px;
+
+                @media screen and (max-width: $media-desktop-small-max) {
+                    min-width: unset;
+                    width: 40px;
+                }
+
+                @media screen and (max-width:$media-tablet-large-max) {
+                    width: 16.5%;
+                    min-width: unset;
+                }
+
+                span {
+                    padding: 0px;
+
+                    @media screen and (max-width: $media-desktop-small-max) {
+                        display: none;
+                    }
+                }
+
+                .si-icon {
+                    flex: 0 0 25px;
+                    width: 25px;
+                    height: 25px;
+
+                    @media screen and (max-width: $media-desktop-small-max) {
+                        display: block;
+                    }
+
+                    &.si-mail {
+                        &::after {
+                            content: map-get($icons, email);
+                            left: 50%;
+                            top: 50%;
+                            @include transform(translate(-50%, -50%))
+                        }
+                    }
+                }
+            }
+        }
+
+        .si-selectBox {
+            margin-right: 15px;
+            min-width: 146px;
+            width: 146px;
+
+            @media screen and (max-width: $media-desktop-small-max) {
+                margin-right: 10px;
+                min-width: unset;
+                width: 110px;
+            }
+
+            .SumoSelect {
+                .CaptionCont {
+                    &.SelectBox {
+                        min-width: auto;
+                        width: 100%;
+
+                    }
+                }
+            }
+
+            @media screen and (max-width:$media-tablet-large-max) {
+                min-width: auto;
+                width: 33.33%
+            }
+
+            // padding: 10px 8px;
+            select {
+                height: 33px;
+                font-family: $bold_font-family;
+                font-weight: $bold_font-weight;
+                font-size: 13px;
+                color: $font-color;
+                @include border-radius(50px);
+                border: 1px solid $border-color;
+                padding: 0 8px;
+            }
+        }
+
+        .si-weekSlider {
+            flex: 0 0 135px;
+            width: 135px;
+            margin-right: 15px;
+            @extend %flexbox;
+            align-items: center;
+            justify-content: center;
+
+            @media screen and (min-width: $media-tablet-max) and (max-width: $media-desktop-small-max) {
+                margin-right: 10px;
+            }
+
+            span {
+                font-family: $regular_font-family;
+                font-weight: $regular_font-weight;
+                font-size: 15px;
+                flex: 1;
+                text-align: center;
+
+                &.si-icon {
+                    width: 25px;
+                    height: 25px;
+                    flex: 0 0 25px;
+                    @include border-radius(50%);
+                    border: 1px solid $border-color;
+                    background-color: #8f9094;
+                    padding: 0;
+                    align-items: center;
+                    justify-content: center;
+
+                    @media screen and (max-width:$media-tablet-large-max) {
+                        margin-top: 0px;
+                    }
+
+                    &::after {
+                        color: $white;
+                        font-size: 12px;
+                    }
+
+                    &.si-left {
+                        &::after {
+                            content: map-get($icons, backward);
+                        }
+                    }
+
+                    &.si-right {
+                        &::after {
+                            content: map-get($icons, forward);
+                        }
+                    }
+                }
+            }
+        }
+
+        .si-monthYearBox {
+            @extend %flexbox;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            font-family: $regular_font-family;
+            font-weight: $regular_font-weight;
+            font-size: 15px;
+            color: $font-color;
+            margin-right: 30px;
+
+            @media screen and (min-width: $media-tablet-max) and (max-width: $media-desktop-small-max) {
+                margin-right: 10px;
+            }
+
+            @media screen and (max-width:$media-tablet-large-max) {
+                margin-right: 0;
+            }
+        }
+
+        .si-reportsBox {
+            @extend %flexbox;
+            align-items: center;
+            justify-content: center;
+            margin-right: 25px;
+
+            @media screen and (min-width: $media-tablet-max) and (max-width: $media-desktop-small-max) {
+                margin-right: 10px;
+            }
+
+            @media screen and (max-width: $media-desktop-small-max) {
+                @include border-radius(50px);
+                border: 1px solid $border-color;
+                background-color: $white;
+                height: 33px;
+                width: 40px;
+            }
+
+            @media screen and (max-width:$media-tablet-large-max) {
+                margin-right: 0px;
+                width: 16.5%;
+            }
+
+            span {
+                font-family: $bold_font-family;
+                font-weight: $bold_font-weight;
+                font-size: 13px;
+
+                @media screen and (max-width: $media-desktop-small-max) {
+                    display: none;
+                }
+
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+
+                &.si-icon {
+                    width: 25px;
+                    flex: 0 0 25px;
+                    height: 25px;
+                    padding: 0;
+
+                    @media screen and (max-width: $media-desktop-small-max) {
+                        @include flexbox;
+                    }
+
+                    &.si-report {
+                        &::after {
+                            content: map-get($icons, reports);
+
+                            color: $font-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .si-logoutBox {
+            width: 45px;
+            height: 45px;
+            flex: 0 0 45px;
+            position: relative;
+
+            @media screen and (max-width:$media-tablet-large-max) {
+                position: absolute;
+                right: 15px;
+                top: 20px;
+                z-index: 1;
+                width: 30px;
+                height: 30px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                @include border-radius(8px);
+                background-color: rgba($client-primary-color, .5);
+                @include transform(rotate(45deg));
+                z-index: -1;
+
+                @media screen and (max-width:$media-tablet-large-max) {
+                    background-color: $white;
+                }
+            }
+
+            .si-icon {
+                &.si-logout {
+                    &::after {
+                        content: map-get($icons, logout);
+                        font-size: 25px;
+                        color: $font-color;
+
+                        @media screen and (max-width:$media-tablet-large-max) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

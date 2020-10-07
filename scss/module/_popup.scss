@@ -1,0 +1,951 @@
+.si-popup {
+    &-modal {
+        .si-popup-close {
+            width: 25px;
+            height: 25px;
+            @extend %flexbox;
+            align-items: center;
+            justify-content: center;
+            background-color: $font-color !important;
+
+            &::after {
+                content: map-get($icons, close) !important;
+                font-size: 12px !important;
+            }
+        }
+
+        &.si-playersPopup {
+
+            max-width: 621px;
+            height: 458px;
+            @include border-radius(20px);
+            margin: 0 auto;
+
+            @media screen and (max-width: $media-tablet-small-max) and (orientation: landscape) {
+                height: calc(100vh - 20px);
+            }
+
+            &.si-addPlayer,
+            &.si-deletePlayer {
+                .si-popup {
+                    &-body {
+                        .si-player {
+                            &__center {
+                                .si-tbls {
+                                    &__cell {
+                                        .si-selectBox {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.si-editPlayer {
+                .si-popup {
+                    &-body {
+                        .si-player {
+                            &__center {
+                                .si-tbls {
+                                    &__cell {
+
+                                        &.si-role,
+                                        &.si-sport {
+
+                                            .si-role__container,
+                                            .si-sport__container {
+                                                span {
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.si-playerList {
+                .si-popup {
+                    &-body {
+                        .si-player {
+                            &__center {
+                                height: calc(100% - 70px);
+
+                                .si-tbls {
+                                    &__cell {
+                                        &.si-playerName {
+                                            .si-playerName__container {
+                                                .si-checkBox {
+                                                    display: none
+                                                }
+                                            }
+                                        }
+
+                                        .si-selectBox {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &__bottom {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            } 
+            &.si-newadd{
+                .si-playerName__container{
+                .si-editxt{
+                    width: 100%;
+                    height: 100%;
+                    padding: 5px 35px 5px 13px;
+                    margin: 0px;
+                    border: none;
+                    @include border-radius(5px);
+                    text-transform: capitalize;
+                    background: transparent;
+                    border: 1px solid rgba(92, 92, 92, 0.2);
+                    background-color: $white;
+                  
+                    font-family: $bold_font-family;
+                    font-weight: $bold_font-weight;
+                    font-size: 13px;
+                    color: $font-color;
+                }
+                }
+               .si-negative{
+                  width:25px;
+                  height: 25px;
+                  @include border-radius(50px);
+                  border: 1px solid rgb($black, 0.2);
+                  
+              
+                  .si-icon{
+                
+                    &.si-delete {
+                        &::after {
+                            content: map-get($icons, delete);
+                            font-size: 15px;
+                            top:10px;
+                        }
+                    }
+                 
+                  }
+                } 
+          
+                .si-popup {
+                    &-body {
+                        .si-player {
+                            &__center {
+                                .si-tbls {
+                                    &__row {
+                                        // &:first-child {
+                                        //     border-bottom:none;
+                                        // }
+                                    }
+                                }
+                                .si-abtn{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    /* flex-flow: column; */
+                                    width: 100%;
+                                    font-family: $bold_font-family;
+                                    font-weight:$bold_font-weight;
+                                    color:$black;
+                                
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .si-popup {
+                &-modal {
+
+                    &-bg {
+                        padding: 0px;
+                        max-width: inherit;
+                        height: 100%;
+                    }
+                }
+
+                &-body {
+                    overflow: hidden;
+                    @include border-radius(20px);
+                    height: 100%;
+
+                    .si-player {
+                        &__top {
+                            height: 70px;
+                            background-color: $white;
+                            @extend %flexbox;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 0px 20px;
+                            @include box-shadow(0px, 5px, 10px, 0px, rgb($black, 0.2));
+
+                            .si-head {
+                                font-family: $bold_font-family;
+                                font-weight: $bold_font-weight;
+                                font-size: 22px;
+                                text-transform: capitalize;
+
+                                @media screen and (max-width: $media-mobile-max) {
+                                    flex: 0 0 120px;
+                                    font-size: 15px;
+                                }
+                            }
+
+                            input {
+                                @include border-radius(30px);
+                                border: 1px solid $border-color;
+                                padding: 10px;
+                            }
+                        }
+
+                        &__center {
+                            height: calc(100% - 140px);
+
+                            .si-tbls {
+                                height: 100%;
+                                table-layout: fixed;
+
+                                &__head {
+                                    width: calc(100% - 8px);
+
+                                    .si-tbls {
+                                        &__row {
+                                            height: 35px;
+                                            position: relative;
+                                            z-index: 1;
+
+                                            &::after {
+                                                content: '';
+                                                position: absolute;
+                                                width: calc(100% + 8px);
+                                                height: 100%;
+                                                left: 0;
+                                                top: 0;
+                                                background-color: $client-primary-color;
+                                                z-index: -1;
+                                            }
+                                        }
+
+                                        &__cell {
+                                            font-family: $bold_font-family;
+                                            font-weight: $bold_font-weight;
+                                            font-size: 14px;
+                                            color: $white;
+
+                                            &.si-role,
+                                            &.si-sport {
+                                                text-align: center
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &__body {
+                                    height: calc(100% - 35px);
+
+                                    .scroll-pane {
+                                        width: 100% !important;
+                                        height: 100% !important;
+                                    }
+                                }
+
+                                &__row {
+                                    height: 48px;
+                                    @extend %flexbox;
+                                    align-items: center;
+
+                                    &:nth-last-child(-n+3) {
+                                        .si-tbls {
+                                            &__cell {
+                                                .si-selectBox {
+                                                    .SumoSelect {
+                                                        .optWrapper {
+                                                            top: auto;
+                                                            bottom: 30px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &:nth-child(-n+3) {
+                                        .si-tbls {
+                                            &__cell {
+                                                .si-selectBox {
+                                                    .SumoSelect {
+                                                        .optWrapper {
+                                                            top: 30px;
+                                                            bottom: auto;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &:not(:last-child) {
+                                        border-bottom: 1px solid $border-color;
+
+                                    } 
+                                  
+                                }
+
+                                &__cell {
+                                    padding: 0 10px;
+                                    width: 25%;
+                                    font-family: $regular_font-family;
+                                    font-weight: $regular_font-weight;
+                                    font-size: 14px;
+
+                                    @media screen and (max-width: $media-mobile-max) {
+                                        font-size: 11px;
+                                        width: 33.33%;
+                                        padding: 0 5px;
+                                    }
+
+                                    &.si-playerName {
+                                        width: 50%;
+                                     &.si-change{
+                                        width: 45% !important;
+                                     }
+                                        @media screen and (max-width: $media-mobile-max) {
+                                            width: 33.33%;
+                                        }
+
+                                        .si-playerName__container {
+                                            @extend %flexbox;
+                                            align-items: center;
+                                            justify-content: flex-start;
+
+
+                                            .si-checkBox {
+                                                width: 25px;
+                                                height: 25px;
+                                                margin-right: 5px;
+
+                                                [type="checkbox"] {
+
+                                                    &:checked,
+                                                    &:not(:checked) {
+                                                        &+label {
+                                                            padding: 12.5px;
+
+                                                            &::after,
+                                                            &::before {
+                                                                width: 25px;
+                                                                height: 25px;
+                                                            }
+                                                        }
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &.si-role,
+                                    &.si-sport {
+
+                                        .si-role__container,
+                                        .si-sport__container {
+                                            span {
+                                                display: block;
+
+                                                text-align: center;
+                                            }
+                                        }
+                                    }
+
+                                    .si-selectBox {
+                                        select {
+                                            height: 33px;
+                                            font-family: $regular_font-family;
+                                            font-weight: $regular_font-weight;
+                                            font-size: 14px;
+                                            color: $font-color;
+                                            width: 100%;
+                                            border: none;
+                                            background: transparent;
+                                            padding: 8px;
+                                        }
+
+                                        .SumoSelect {
+                                            .CaptionCont {
+                                                &.SelectBox {
+                                                    min-width: unset;
+                                                    width: 100%;
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &__bottom {
+                            @extend %flexbox;
+                            align-items: center;
+                            justify-content: center;
+                            height: 70px;
+                            @include box-shadow(0px, -5px, 10px, 0px, rgb($black, 0.2));
+
+                            .si-btn {
+                                min-width: 145px;
+                                width: 145px;
+                                height: 33px;
+                                @include border-radius(20px);
+                                padding: 10px;
+                                line-height: 15px;
+
+                                span {
+                                    display: block;
+                                    font-size: 14px;
+                                    font-family: $bold_font-family;
+                                    font-weight: $bold_font-weight;
+                                    color: $white;
+                                }
+
+                                &.si-btnOne {
+                                    background-color: $client-secondary-color
+                                }
+
+                                &.si-btnTwo {
+                                    background-color: $client-primary-color
+                                }
+                                &.si-btnrow{
+                                    background-color: $gray;
+                                }
+
+                                &:not(:last-child) {
+                                    margin-right: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.si-tooltip {
+            max-width: 456px;
+            height: 360px;
+
+            @media screen and (max-width: $media-mobile-max) {
+                max-width: 456px !important;
+            }
+
+            &.si-assigned {
+
+
+                .si-tooltipBox {
+                    &::before {
+                        background-color: $client-primary-color;
+                    }
+
+                    .si-matchName {
+                        span {
+                            color: $client-primary-color;
+                        }
+                    }
+                }
+
+            }
+
+            &.si-unassigned {
+
+                .si-tooltipBox {
+                    &::before {
+                        background-color: $client-secondary-color;
+                    }
+
+                    .si-matchName {
+                        span {
+                            color: $client-secondary-color;
+                        }
+                    }
+                }
+
+            }
+
+            .si-popup {
+                &-body {
+                    .si-tooltipBox {
+                        position: relative;
+                        max-width: 456px;
+                        height: 360px;
+                        background: $white;
+                        @include border-radius(5px);
+                        @include box-shadow(0, 0, 8px, 0, rgba($black, .5));
+                        z-index: 11;
+                        left: 0px;
+                        padding: 15px;
+                        cursor: default;
+
+                        @media screen and (max-width: $media-mobile-small-max-456) {
+                            padding: 10px;
+                        }
+
+                        &.si-edit {
+                            .si-scrollBox {
+                                &__container {
+                                    pointer-events: auto;
+                                    cursor: default;
+                                }
+
+                                .si-notification {
+                                    .si-default {
+                                        display: none;
+                                    }
+
+                                    &__box {
+                                        @extend %flexbox;
+                                    }
+                                }
+
+                                .si-btn {
+                                    &.si-btnSave {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+
+
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: calc(100% - 60px);
+                            margin: auto;
+                            height: 4px;
+                            left: 0;
+                            right: 0;
+                            bottom: -4px;
+                            @include border-radius(5px);
+                        }
+
+                        .si-boxHeader {
+                            height: 30px;
+                            background-color: $white;
+                            @extend %flexbox;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-bottom: 12px;
+
+                            .si-icon {
+                                cursor: pointer;
+                                width: 25px;
+                                height: 25px;
+
+                                &.si-back {
+                                    background-color: #8f9094;
+                                    @include border-radius(50%);
+                                    display: none;
+
+                                    &::after {
+                                        content: map-get($icons, backward);
+                                        color: $white;
+                                        font-size: 14px;
+                                    }
+                                }
+
+                                &.si-edit {
+                                    &::after {
+                                        content: map-get($icons, edit);
+                                    } 
+                                    &.active{
+                                        &::after{
+                                            color:$client-secondary-color;
+                                        }
+                                    }
+                                }
+
+                                &.si-delete {
+                                    &::after {
+                                        content: map-get($icons, delete);
+                                    }
+                                }
+
+                                &.si-menu {
+                                    &::after {
+                                        content: map-get($icons, more);
+                                    }
+                                }
+
+                                &.si-mail {
+                                    &::after {
+                                        content: map-get($icons, email);
+                                    }
+                                }
+
+                                &.si-cancel {
+                                    &::after {
+                                        content: map-get($icons, close);
+                                    }
+                                }
+
+
+                            }
+
+                            &__right {
+                                ul {
+                                    @extend %flexbox;
+                                    align-items: center;
+                                    justify-content: flex-end;
+
+                                    li {
+                                        &:not(:last-child) {
+                                            margin-right: 10px;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .si-scrollBox {
+                            height: calc(100% - 106px);
+
+                            .scroll-pane {
+                                width: 100% !important;
+                                height: 100% !important;
+                            }
+
+                            &__container {
+                                cursor: default !important;
+                                pointer-events: none;
+
+                            }
+                        }
+
+                        .si-matchName {
+                            @extend %flexbox;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin-bottom: 12px;
+
+                            span {
+                                text-transform: uppercase;
+                                font-family: $bold_font-family;
+                                font-weight: $bold_font-weight;
+                                font-size: 18px;
+
+                                &:not(:last-child) {
+                                    margin-right: 5px;
+                                }
+
+                                &.si-vs {
+                                    text-transform: lowercase;
+                                }
+                            }
+                        }
+
+                        .si-dateBox {
+                            @extend %flexbox;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin-bottom: 12px;
+
+                            span {
+                                font-size: 14px;
+                                font-family: $regular_font-family;
+                                font-weight: $regular_font-weight;
+
+                                @media screen and (max-width: $media-mobile-small-max-456) {
+                                    font-size: 12px;
+                                }
+
+                                &:not(:last-child) {
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+
+                        .si-assignBox {
+                            @extend %flexbox;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin-bottom: 12px;
+
+                            &__left {
+                                flex: 0 0 90px;
+                                width: 90px;
+
+                                @media screen and (max-width: $media-mobile-small-max-456) {
+                                    flex: 1;
+                                    width: auto;
+                                }
+
+                                span {
+                                    font-family: $regular_font-family;
+                                    font-weight: $regular_font-weight;
+                                    font-size: 15px;
+
+                                    @media screen and (max-width: $media-mobile-small-max-456) {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+
+                            &__select {
+                                flex: 0 0 135px;
+                                width: 135px;
+
+                                @media screen and (max-width: $media-mobile-small-max-456) {
+                                    flex: 0 0 110px;
+                                    width: 110px;
+                                }
+
+                                .si-selectBox {
+                                    select {
+                                        height: 33px;
+                                        font-family: $bold_font-family;
+                                        font-weight: $bold_font-weight;
+                                        font-size: 13px;
+                                        color: $font-color;
+                                        @include border-radius(50px);
+                                        border: 1px solid $border-color;
+                                        min-width: 146px;
+                                        width: 146px;
+                                        // padding: 10px 8px;
+                                        padding: 0 8px;
+                                    }
+                                }
+                            }
+
+                            /* &__right {
+                                .si-selectBox {
+                                    width: 100%;
+
+                                    select {
+                                        height: 33px;
+                                        font-family: $bold_font-family;
+                                        font-weight: $bold_font-weight;
+                                        font-size: 13px;
+                                        color: $font-color;
+                                        @include border-radius(50px);
+                                        border: 1px solid $border-color;
+                                        min-width: 146px;
+                                        width: 100%;
+                                        // padding: 10px 8px;
+                                        padding: 0 8px;
+                                    }
+                                }
+                            } */
+
+                            &__container {
+                                &:not(:last-child) {
+                                    margin-right: 10px;
+
+                                    @media screen and (max-width: $media-mobile-small-max-456) {
+                                        margin-right: 5px;
+                                    }
+                                }
+
+                                .SumoSelect {
+                                    .CaptionCont {
+                                        &.SelectBox {
+
+                                            min-width: unset;
+                                            width: 100%;
+
+                                        }
+                                    }
+                                }
+
+                                &.si-iconBox {
+                                    flex: 0 0 25px;
+                                    width: 25px;
+
+                                    .si-icon {
+                                        width: 100%;
+                                        height: 25px;
+                                        border: 1px solid rgb($black, 0.2);
+                                        @include border-radius(50%);
+
+                                        &.si-delete {
+                                            &::after {
+                                                content: map-get($icons, delete);
+                                                font-size: 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        /* .si-addPlayer {
+                            @extend %flexbox;
+                            align-items: center;
+                            justify-content: flex-start;
+                            width: 100%;
+                            margin-bottom: 12px;
+
+                            .si-selectBox {
+                                width: 100%;
+
+                                select {
+                                    height: 33px;
+                                    font-family: $bold_font-family;
+                                    font-weight: $bold_font-weight;
+                                    font-size: 13px;
+                                    color: $font-color;
+                                    @include border-radius(50px);
+                                    border: 1px solid $border-color;
+                                    min-width: 146px;
+                                    width: 100%;
+                                    // padding: 10px 8px;
+                                    padding: 0 8px;
+                                }
+                            }
+                        } */
+
+                        .si-btn {
+                            height: 30px;
+
+                            &.si-btnSave {
+                                min-width: 176px;
+                                width: 176px;
+                                background-color: $client-complementary-color;
+                                color: $white;
+                                @include border-radius(10px);
+                                margin: auto;
+                                display: none;
+                                font-family: $regular_font-family;
+                                font-weight: $regular_font-weight;
+                                margin-bottom: 10px;
+
+                                span {
+                                    color: $white;
+                                    font-size: 14px;
+                                }
+                            }
+
+                            &.si-addColumn {
+                                @extend %flexbox;
+                                align-items: center;
+                                justify-content: center;
+                                min-width: 120px;
+                                width: 120px;
+                                margin-bottom: 12px;
+
+                                span {
+                                    flex: 1;
+                                    font-size: 15px;
+                                    font-family: $regular_font-family;
+                                    font-weight: $regular_font-weight;
+                                    padding: 0px;
+
+                                    &.si-icon {
+                                        flex: 0 0 30px;
+                                        height: 30px;
+                                        width: 30px;
+
+                                        &::after {
+                                            content: map-get($icons, addColumn);
+                                            font-size: 30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+
+                        .si-notification {
+                            margin-bottom: 12px;
+
+                            span {
+                                &.si-default {
+                                    font-size: 15px;
+                                    font-family: $regular_font-family;
+                                    font-weight: $regular_font-weight;
+                                }
+                            }
+
+                            &__box {
+                                @extend %flexbox;
+                                align-items: center;
+                                justify-content: flex-start;
+                                display: none;
+
+                                span {
+                                    font-size: 15px;
+                                    font-family: $regular_font-family;
+                                    font-weight: $regular_font-weight;
+                                    flex: 0 0 90px;
+                                    width: 90px;
+
+                                    @media screen and (max-width: $media-mobile-small-max-456) {
+                                        font-size: 12px;
+                                        flex: 1;
+                                        width: auto;
+                                    }
+                                }
+
+                                .si-num {
+                                    margin-left: 10px;
+                                    flex: 0 0 90px;
+                                    width: 90px;
+
+                                    @media screen and (max-width: $media-mobile-small-max-456) {
+                                        flex: 0 0 33%;
+                                        width: 33%;
+                                    }
+
+                                    .SumoSelect {
+                                        .optWrapper {
+                                            top: auto;
+                                            bottom: 30px;
+                                        }
+
+                                        .CaptionCont {
+                                            &.SelectBox {
+
+                                                min-width: unset;
+                                                width: 100%;
+
+                                            }
+                                        }
+                                    }
+
+                                    select {
+                                        height: 33px;
+                                        font-family: $bold_font-family;
+                                        font-weight: $bold_font-weight;
+                                        font-size: 15px;
+                                        color: $font-color;
+                                        @include border-radius(50px);
+                                        border: 1px solid $border-color;
+                                        min-width: 76px;
+                                        width: 76px;
+                                        // padding: 10px 8px;
+                                        padding: 0 8px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
